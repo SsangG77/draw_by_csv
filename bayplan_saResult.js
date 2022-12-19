@@ -11,6 +11,7 @@ import HatchplanList from "./HatchPlanList_class.js";
 import { readCSV_optistow_result } from "./readCSV_optistow_result.js";
 
 let container_arr = readCSV_optistow_result();
+console.log("TEST ON WEB VSCODE!! FROM GALAXY Z FOLD2.")
 let hatchplan_result;
 
 let vsm = fs.readFileSync("MV03.VSM", {
