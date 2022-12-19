@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/5e5b3beccf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/draw_bayplan_demo.css" />
+    <title>Final Bay Plan</title>
+  </head>
+
+  <body>
+    <div id="header">
+      <div id="header-nav">
+        <img src="./img/image_7.png" alt="" />
+        <h4>Last Order Control Service</h4>
+        <ul>
+          <li id="bpv-drop-down">
+            <a href="">Inquiry</a>
+            <ul id="bpv-nav">
+              <li>
+                <a href="">Creation</a>
+              </li>
+              <li>
+                <a href="">Inquiry</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="">Analysis</a></li>
+          <li><a href="">Confirm</a></li>
+          <li><a href="">Summary</a></li>
+          <li id="final-drop-down">
+            <a class="now-location" href="">Bay Plan Viewer</a>
+            <ul id="final-nav">
+              <li>
+                <a>Final Bay Plan</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="http://118.39.85.36/">AIS 운항데이터</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="main">
+      <h3>Bay Plan Selection (Preliminary Bay Plan)</h3>
+      <div class="bpv-title">
+        <div class="bpv-content">
+          <ul>
+            <li class="semi-title">VVD</li>
+            <li>
+              <input class="large-box" type="text" />
+            </li>
+            <li class="semi-title">ETA</li>
+            <li>
+              <input class="large-box" type="text" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <select id="select_hatch" name="hatch" onchange="changeHatch()"></select>
+
+      <div class="container">
+        <canvas id="canvas1" width="500px" height="500px"></canvas>
+        <canvas id="canvas2" width="500px" height="500px"></canvas>
+        <canvas id="canvas3" width="500px" height="500px"></canvas>
+      </div>
+    </div>
+    <div id="contents-table">
+      <!-- <button id="result-btn">S. A. Result Viewer</button> -->
+      <a href=""
+        ><button id="backpage-btn" onclick="history.back()">
+          Back To selection
+        </button></a
+      >
+    </div>
+    <script type="module" src="../bayplan_demo.js"></script>
+  </body>
+</html>

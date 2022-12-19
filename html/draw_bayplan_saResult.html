@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/5e5b3beccf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/draw_bayplan_saResult.css" />
+    <title>S. A. Result Viewer</title>
+  </head>
+
+  <body>
+    <select id="select_hatch" name="hatch" onchange="changeHatch()"></select>
+
+    <div class="container">
+      <canvas id="canvas1" width="500px" height="500px"></canvas>
+      <canvas id="canvas2" width="500px" height="500px"></canvas>
+      <canvas id="canvas3" width="500px" height="500px"></canvas>
+    </div>
+
+    <script type="module" src="../bayplan_saResult.js"></script>
+  </body>
+</html>
